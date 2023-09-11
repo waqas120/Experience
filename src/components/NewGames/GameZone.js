@@ -44,13 +44,13 @@ const GameZone = () => {
         </div>
         <div className="w-full lg:w-4/5 ml-10 ">
           <div className="relative ">
-            <div className="bg-border_image bg-contain bg-no-repeat !h-[64vh] !w-[72vw]">
+            <div className="bg-border_image bg-no-repeat" style={{ backgroundSize:"100% auto"}}>
               <h2 className="pl-10  font-sharpin text-2xl text-white">
                 {" "}
                 SCENES LIST
               </h2>
               <div className="flex justify-center items-center ">
-                <img src={activeImagePath} className=" object-fit mt-24 " />
+                <img src={activeImagePath} style={{marginRight:'0.7vw', width:'97%', marginTop:'4.4vw', marginBottom:'0.3vw'}}/>
                 <Heading
                   text={heading}
                   paragraph={text}
@@ -99,7 +99,7 @@ const GameZone = () => {
               </div>
             </div>
 
-            <Swiper>
+            <Swiper style={{marginTop:"80px"}}>
               <SwiperSlide></SwiperSlide>
             </Swiper>
           </div>
